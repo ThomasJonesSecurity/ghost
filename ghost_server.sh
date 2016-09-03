@@ -1,8 +1,7 @@
-sudo apt-get update && sudo apt-get upgrade --assume-yes
-apt-get -y dist-upgrade
-sudo apt-get update && sudo apt-get upgrade --assume-yes
-sudo aptitude install zip wget git npm nodejs build-essential libssl-dev --assume-yes
-apt-get -y --purge autoremove
+apt-get update && apt-get upgrade --assume-yes && apt-get -y dist-upgrade
+apt-get update && apt-get upgrade --assume-yes
+apt-get install zip wget git npm nodejs build-essential libssl-dev --assume-yes
+apt-get --assume-yes --purge autoremove
 apt-get clean
 
 mkdir -p /var/www/ghost
